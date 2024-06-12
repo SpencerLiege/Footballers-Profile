@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(246, 246, 249, 0.7);
+    align-items: center;
+    /* margin: auto; */
+    /* padding: 1rem; */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    border-bottom: 1px solid rgb(122, 120, 120, 0.1);
+}
+.logo img{
+    height: 55px;
+    border-radius: 50%;
+}
+.search {
+    display: flex;
+    text-align: center;
+    /* margin-left: -15rem; */
+}
+.search input[type=text]{
+    padding: 10px;
+    width: 200px;
+    border: 1px solid rgba(177, 168, 168, 0.5);
+    border-radius: 5px;
+    font-size: 16px;
+}
+.search input[type=text]:focus{
+    outline: none;
+}
+.search button{
+    padding: 10px 20px;
+    background-color: #6f6a6a;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: -5px;
+    transition: background-color 0.3s ease;
+}
+.search button:hover{
+    background-color: rgb(62, 58, 58);
+}
+.info{
+    margin-right: 50px;
+}
+.info ul{
+    display: flex;
+    gap: 40px;
+}
+.info a{
+    /* list-style: none; */
+    text-decoration: none;
+    color: #6f6a6a;
+}
+.info a:hover{
+    color: black;
+}
+.info li{
+    list-style: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+.intro-page{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    padding: 30px;
+    /* align-items: center; */
+    
+}
+.intro-container{
+    text-align: center;
+    max-width: 50%;
+}
+.intro-page img{
+    width: 300px;
+    border-radius: 10px;
+}
+.intro-container article{
+    display: inline-block;
+    line-height: 1.5;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.intro-container a{
+    text-decoration: none;
+    background-color: #6f6a6a;
+    color: white;
+    padding: 5px;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease;
+
+}
+.intro-container a:hover{
+    background-color: black;
+}

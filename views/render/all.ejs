@@ -1,0 +1,18 @@
+<%- include ('../partials/header') %>
+
+<%- include ('../partials/nav') %>
+
+<!-- <p>Welcome to all players list</p> -->
+
+<ul class="players-list">
+    <% for(let p of person){ %>
+    <div>
+        <img src="<%= p.photo%>" alt="">
+        <li><%=p.name%> - <%= p.position%></li>
+        <a href="/players/<%=p._id %>">VIEW PROFILE</a>
+    </div>
+          
+    <%}%>
+</ul>
+
+<%- include ('../partials/footer') %>

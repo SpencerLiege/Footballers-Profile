@@ -1,0 +1,27 @@
+<%- include ('../partials/header') %>
+
+<%- include ('../partials/nav') %>
+
+<form action="/players/<%= player._id %>?_method=PUT" method="POST" id="add">
+    <!-- <input type="hidden" name="_method" value="PUT"> -->
+    <div>
+        <label for="name">Player name</label>
+        <input type="text"  name="player[name]" value="<%=player.name%>" id="name" required>
+    </div>
+    <div>
+        <label for="position">Position</label>
+        <input type="text" name="player[position]" value="<%=player.position%>" id="position">
+    </div>
+    <div>
+        <label for="Shirt-number">Shirt Number</label>
+        <input type="number" name="player[number]" value="<%=player.number%>" id="number"> 
+    </div>
+    <div>
+        <label for="country">Country</label>
+        <input type="text" name="player[country]" value="<%=player.country%>" id="country"> 
+    </div>
+    
+    <Button>Update player</Button>
+</form>
+
+<%- include ('../partials/footer') %>

@@ -1,0 +1,26 @@
+<%- include ('../partials/header') %>
+
+<%- include ('../partials/nav') %>
+
+<form action="/players" method="post" id="add">
+    <div>
+        <label for="name">Player name</label>
+        <input type="text" placeholder="Full name" name="name" id="name" required>
+    </div>
+    <div>
+        <label for="position">Position</label>
+        <input type="text" placeholder="Defender" name="position" id="position">
+    </div>
+    <div>
+        <label for="Shirt-number">Shirt Number</label>
+        <input type="number" placeholder="10" name="number" id="number"> 
+    </div>
+    <div>
+        <label for="country">Country</label>
+        <input type="text" placeholder="Nigeria" name="country" id="country"> 
+    </div>
+    
+    <Button>Add player</Button>
+</form>
+
+<%- include ('../partials/footer') %>

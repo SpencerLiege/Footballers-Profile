@@ -1,0 +1,57 @@
+
+.players-list{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    /* gap: 10px; */
+    justify-content: space-evenly;
+    background-color: rgba(185, 190, 190, 0.2);
+    
+    
+}
+.players-list div{
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+}
+.players-list li{
+    list-style: none;
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 2;
+    font-size: 20px;
+}
+.players-list a{
+    text-decoration: none;
+    background-color: #6f6a6a;
+    color: white;
+    padding: 5px;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+.players-list a:hover{
+    background-color: black;
+}
+.players-list img{
+    height: 250px;
+    width: 300px;
+    border-radius: .7rem;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+#add{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* align-items: center; */
+}
+#add div{
+    margin: 20px 0;
+
+}
+/* #add button{
+} */

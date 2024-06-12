@@ -1,0 +1,19 @@
+<%- include ('../partials/header') %>
+
+<%- include ('../partials/nav') %>
+
+<h1>Greetings</h1>
+<div>
+    <h1> <%= player.name %> - <%= player.position %></h1>
+    <h2>Number: <%= player.number %></h2>
+    <p><a href="/players/<%= player._id%>/edit">Edit</a> </p>
+    <form action="/players/<%=player._id%>?_method=Delete" method="POST">
+        <!-- <input type="hidden" name="_method" value="DELETE"> -->
+        <button type="submit">Delete</button>
+    </form>
+
+</div>
+
+
+
+<%- include ('../partials/footer') %>
